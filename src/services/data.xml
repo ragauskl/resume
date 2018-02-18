@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<name>LINA RAGAUSKAITE<name/>
+<title>Full-stack Javascript Developer</title>
+<intorduction>
+Hi, I'm a passionate software and web engineer. Eager to learn, curious, determined and responsible are four words that I believe describe me the best.
+I started programming from 10th grade and since then I realised that software engineering is something I would be thrilled to work on daily for the rest of my life. Initially, I was focusing on software engineering and took on placement as an Undergraduate Software Engineer in Sorion Ltd, automotive industry. However, during placement, over my free time, I gained a huge interest in full-stack development for both websites and mobile applications and since then I started to work on personal projects at home and use Angular, Ionic and NodeJS in all university projects.
+I love working on both sides of the spectrum, front-end and back-end, however, I feel that if I had to choose, back-end would be my stronger side. Besides coding, I also like to work with graphic design software and pervasive systems.
+I'm also an active person and love outdoor and indoor activities, while I love sports, I can't say I'm a fan of watching sports teams on television. 
+</intorduction>
+<contacts>
+    <location img="assets/icons/ic-place.svg">Birmingham, UK</location>
+    <email img="assets/icons/ic-email.svg">ragauskl@gmail.com</email>
+    <mobile img="assets/icons/ic-phone.svg">+44 749 205 1761</mobile>
+    <linkedin img="assets/icons/linkedin.svg">linkedin.com/in/ragauskl/</linkedin>
+    <github img="assets/icons/github.svg">github.com/ragauskl</github>
+</contacts>
+<skills>
+    <skill img="assets/icons/javascript.svg">
+        <name>JavaScript</name>
+        <level>55</level>
+        <category>Programming languages</category>
+    </skill>
+    <skill img="assets/icons/typescript.svg">
+        <name>TypeScript</name>
+        <level>60</level>
+        <category>Programming languages</category>
+    </skill>
+    <skill img="assets/icons/html.svg">
+        <name>HTML</name>
+        <level>70</level>
+        <category>Programming languages</category>
+    </skill>
+    <skill img="assets/icons/mongodb.svg">
+        <name>MongoDB</name>
+        <level>55</level>
+        <category>Database solutions</category>
+    </skill>
+    <skill img="assets/icons/msql.svg">
+        <name>MSQL</name>
+        <level>50</level>
+        <category>Database solutions</category>
+    </skill>
+    <skill img="assets/icons/angular.svg">
+        <name>Angular</name>
+        <level>55</level>
+        <category>Frameworks</category>
+    </skill>
+    <skill img="assets/icons/nodejs.svg">
+        <name>NodeJS</name>
+        <level>50</level>
+        <category>Frameworks</category>
+    </skill>
+    <skill img="assets/icons/ionic.svg">
+        <name>Ionic</name>
+        <level>60</level>
+        <category>Frameworks</category>
+    </skill>
+    <skill img="assets/icons/electron.svg">
+        <name>Electron</name>
+        <level>35</level>
+        <category>Frameworks</category>
+    </skill>
+    <skill img="assets/icons/sass.svg">
+        <name>SCSS</name>
+        <level>60</level>
+        <category>Frameworks</category>
+    </skill>
+    <skill img="assets/icons/git.svg">
+        <name>GIT</name>
+        <level>55</level>
+        <category>Version control</category>
+    </skill>
+    <skill img="assets/icons/subversion.svg">
+        <name>Subversion</name>
+        <level>25</level>
+        <category>Version control</category>
+    </skill>
+    <skill img="assets/icons/adobe-photoshop.svg">
+        <name>Photoshop</name>
+        <level>55</level>
+        <category>Graphic and Web software</category>
+    </skill>
+    <skill img="assets/icons/adobe-illustrator.svg">
+        <name>Illustrator</name>
+        <level>35</level>
+        <category>Graphic and Web software</category>
+    </skill>
+    <skill img="assets/icons/adobe-xd.svg">
+        <name>Adobe XD</name>
+        <level>80</level>
+        <category>Graphic and Web software</category>
+    </skill>
+    <skill img="assets/icons/arduino.svg">
+        <name>Arduino</name>
+        <level>50</level>
+        <category>Embedded systems</category>
+    </skill>
+</skills>
+<projets>
+    <project>
+        <name>Route Fox</name>
+        <job>Mobile Full-stack development</job>
+        <description>
+            Dissertation project (currently in progress) - a travel recommender system, that generates route suggestions, between 2+ points of interest, depending on various preferences of user such as how much time will be spent at a place, when does user want to arrive or depart, in what order should the place be visited, is the place visit optional or mandatory and prefered transport type. On top of generating an optimal route, users can save routes and live-track them. If a route is being live-tracked, the user will get notifications when the route cannot be continued due to unexpected traffic or user wandering off too far away from the planned route. To build front-end I am using Ionic and Angular 5. To manipulate maps Google Maps, Directions and Places API's are being used. The back-end is build using NodeJS and is connected to a MongoDB database.
+        </description>
+    </project>
+    <project>
+        <name>Environment monitoring system</name>
+        <job>API development and embedded system support</job>
+        <description>
+            Project for Agile development module - for this project I was assigned to a team of students with various skills, our goal was to develop a hardware box with ESP8266 and various environment monitoring sensors, API connected to a database and a front-end mobile application to allow access to environment data and sensor box information depending on user access level. I was responsible for developing an API, creating a database as well as providing support to hardware team. To build API I used NodeJS, and two communication protocols: HTTP for front-end requests and MQMT for communication with the sensor box. For database solution, we agreed to use MongoDB. To perform unit testing Jasmine was used.
+        </description>
+    </project>
+    <project>
+        <name>Events Map</name>
+        <job>Web Full-stack development</job>
+        <description>
+            Project for full-stack development module - a social platform that allows users to create events and search for existing ones depending on various filters as well as view comments, save or attend events. Project front-end was developed with Angular 4, Angular Flex-layout and Material, as well as Google Maps API for map manipulation. For back-end, i used NodeJS and ExpressJS. During project, I learned to securely hash passwords and used MongoDB as a database solution.
+        </description>
+    </project>
+    <project>
+        <name>Wireless lock system</name>
+        <job>Mobile Front-end and embedded system developement</job>
+        <description>
+            Project for Interactive pervasive computing module - a lock system with NFC tag reader, that is connected to a mobile application over Bluetooth. NFC tags were used to allow only authorized users to lock and unlock the locks, which were built using Arduino Uno microcontroller. A Bluetooth module was added to allow communication between the lock and a mobile application, built using Ionic, which was used to store authorized NFC tag ID's and synchronise data between multiple locks connected, as well as monitor lock states and see unauthorized access attempts. 
+        </description>
+    </project>
+</projects>
+<experience>
+    <job img="assets/sorion.png">
+        <company>Sorion Electronics Limited, Birmingham</company>
+        <job>Undergraduate Software Engineer</job>
+        <report>Reported to System Director and Software Team Manager</report>
+        <from>25 Jun 2016</from>
+        <to>29 Sep 2017</to>
+        <description>At Sorion Ltd my responsibilities were to develop and maintain new features to company’s core product - Sextans-RT, which involved keeping up-to-date documentation, preparing presentations, participating in regular meetings and technical reviews, writing scripts and sometimes visiting customers site. As core product was developed using VB6, I got familiar with it, however, for new feature development, C#.Net and VB.Net were used to help company transfer to a newer programming language. Software development included work with Subversion, TCP/IP, FTP, Serial ports and Microsoft SQL Server.</description>
+        <projets>
+            <project>
+                <name>Multi-language support tool</name>
+                <description>
+                    A multi-language support tool for Sextans-RT. For developing this project I used C#.Net. It consisted of a DLL and a parser software for generating possible phrases, from script and specification files, for translation. The software was used to scan Sextans project scripts and specification files and generate a list of all possible strings that will be displayed to end user, with multiple wildcards where required. This list was then translated by a professional translator and Sextans would use the DLL to replace English text on-screen with the matching translation.
+                </description>
+            </project>
+            <project>
+                <name>Pick-to-Light control engine</name>
+                <description>
+                    A system whereby operators (usually working on assembly lines) are prompted by light illumination to pick the appropriate parts for an order. For the development of this project, i used VB.Net and Chilkat library for TCP/IP connection to hardware and as an Inter-Process Communication between this software and Sextans-RT. Pick-to-Light CE acted as a generic interface between Sextans-RT and the PTL hardware. End product contained a variety of features including hardware set-up, stock control, database storage, assistance light process with and without the use of barcode scanner, hardware real-time simulation to track expected behaviour and hardware maintenance mode.
+                </description>
+            </project>
+            <project>
+                <name>Layered Image Editor</name>
+                <description>
+                    An image editing software and a DLL to be used by Sextans-RT. Software, written in C#.Net allow the creation of custom files that contain a base image and multiple layers of various shapes and text over it with various properties such as to make a layer interactive. To make custom image files usable by Sextans-RT from within scripts I had to write a DLL in C#.Net to generate image depending on various configurations and a VB6 custom image control, which would use the DLL and then could be used by the Sextans-RT.
+                </description>
+            </project>
+        </projects>
+    </job>
+</experience>
+<languages>
+    <language>
+        <name>English</name>
+        <level>Professional working proficiency</level>
+    </language>
+    <language>
+        <name>Russian</name>
+        <level>Professional working proficiency</level>
+    </language>
+    <language>
+        <name>Lithuanian</name>
+        <level>Native</level>
+    </language>
+    <language>
+        <name>German</name>
+        <level>Lower intermediate</level>
+    </language>
+</languages>
+<education img="assets/cov-uni.png">
+    <university>Coventry Univeristy</university>
+    <course>Computing BSc</course>
+    <from>2014</from>
+    <to>2018</to>
+    <modules>
+        <module>
+            <name>Full-stack development</name>
+        </module>
+        <module>
+            <name>Programming, algorithms and data structures</name>
+        </module>
+        <module>
+            <name>Computer architecture and networks</name>
+        </module>
+        <module>
+            <name>Interactive pervasive computing</name>
+        </module>
+        <module>
+            <name>Design for usability</name>
+        </module>
+        <module>
+            <name>Agile development</name>
+        </module>
+        <module>
+            <name>Intellignet agents</name>
+        </module>
+        <module>
+            <name>Enterprise information systems</name>
+        </module>
+        <module>
+            <name>German lower intermediate</name>
+        </module>
+    </modules>
+</education>
