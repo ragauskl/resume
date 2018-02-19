@@ -1,0 +1,200 @@
+{
+    "name": "LINA RAGAUSKAITE",
+    "title": "Full-stack Javascript Developer",
+    "intro": "Hi, I'm a passionate software and web engineer. <b>Eager to learn</b>, <b>curious</b>, <b>determined</b> and <b>responsible</b> are four words that I believe describe me the best.\nI started programming from 10th grade and since then I realised that software engineering is something I would be thrilled to work on daily for the rest of my life. Initially, I was focusing on software engineering and took on placement as an <b>Undergraduate Software Engineer</b> in Sorion Ltd, automotive industry. However, during placement, over my free time, I gained a huge interest in full-stack development for both websites and mobile applications and since then I started to work on personal projects at home and use <b>Angular</b>, <b>Ionic</b> and <b>NodeJS</b> in all university projects.\nI love working on both sides of the spectrum, front-end and back-end, however, I feel that if I had to choose, back-end would be my stronger side. Besides coding, I also like to work with graphic design software and pervasive systems.\nI'm also an active person and love outdoor and indoor activities, while I love sports, I can't say I'm a fan of watching sports teams on television.",
+    "contacts": {
+        "location": {
+            "value": "Birmingham, UK",
+            "img": "assets/icons/ic-place.svg"
+        },
+        "email": {
+            "value": "ragauskl@gmail.com",
+            "img": "assets/icons/ic-email.svg"
+        },
+        "mobile": {
+            "value": "+44 749 205 1761",
+            "img": "assets/icons/ic-phone.svg"
+        },
+        "linkedin": {
+            "value": "linkedin.com/in/ragauskl/",
+            "img": "assets/icons/linkedin.svg"
+        },
+        "github": {
+            "value": "github.com/ragauskl",
+            "img": "assets/icons/github.svg"
+        }
+    },
+    "skill-categories": [
+        {
+            "category": "Programming languages",
+            "skills": [
+                {
+                    "name": "JavaScript",
+                    "percentage": 60,
+                    "img": "assets/icons/javascript.svg"
+                },{
+                    "name": "TypeScript",
+                    "percentage": 55,
+                    "img": "assets/icons/typescript.svg"
+                },{
+                    "name": "HTML",
+                    "percentage": 70,
+                    "img": "assets/icons/html.svg"
+                }
+            ]
+        },{
+            "category": "Database solutions",
+            "skills":[
+                {
+                    "name": "MongoDB",
+                    "percentage": 55,
+                    "img": "assets/icons/mongodb.svg"
+                },{
+                    "name": "MSQL",
+                    "percentage": 50,
+                    "img": "assets/icons/msql.svg"
+                }
+            ]
+        },{
+            "category": "Frameworks",
+            "skills":[
+                {
+                    "name": "Angular",
+                    "percentage": 55,
+                    "img": "assets/icons/angular.svg"
+                },{
+                    "name": "NodeJS",
+                    "percentage": 50,
+                    "img": "assets/icons/nodejs.svg"
+                },{
+                    "name": "Ionic",
+                    "percentage": 60,
+                    "img": "assets/icons/ionic.svg"
+                },{
+                    "name": "Electron",
+                    "percentage": 35,
+                    "img": "assets/icons/electron.svg"
+                },{
+                    "name": "SCSS",
+                    "percentage": 60,
+                    "img": "assets/icons/sass.svg"
+                }
+            ]
+        },{
+            "category": "Version control",
+            "skills":[
+                {
+                    "name": "GIT",
+                    "percentage": 55,
+                    "img": "assets/icons/git.svg"
+                },{
+                    "name": "Subversion",
+                    "percentage": 25,
+                    "img": "assets/icons/subversion.svg"
+                }
+            ]
+        },{
+            "category": "Graphic and Web software",
+            "skills":[
+                {
+                    "name": "Photoshop",
+                    "percentage": 55,
+                    "img": "assets/icons/adobe-photoshop.svg"
+                },{
+                    "name": "Illustrator",
+                    "percentage": 35,
+                    "img": "assets/icons/adobe-illustrator.svg"
+                },{
+                    "name": "Adobe XD",
+                    "percentage": 80,
+                    "img": "assets/icons/adobe-adobe-xd.svg"
+                }
+            ]
+        },{
+            "category": "Embedded systems",
+            "skills":[
+                {
+                    "name": "Arduino",
+                    "percentage": 50,
+                    "img": "assets/icons/arduino.svg"
+                }
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Route Fox",
+            "job": "Mobile Full-stack development",
+            "description": "Dissertation project (currently in progress) - a travel recommender system, that generates route suggestions, between 2+ points of interest, depending on various preferences of user such as how much time will be spent at a place, when does user want to arrive or depart, in what order should the place be visited, is the place visit optional or mandatory and prefered transport type. On top of generating an optimal route, users can save routes and live-track them. If a route is being live-tracked, the user will get notifications when the route cannot be continued due to unexpected traffic or user wandering off too far away from the planned route. To build front-end I am using Ionic and <b>Angular 5</b>. To manipulate maps <b>Google Maps</b>, <b>Directions</b> and <b>Places API's</b> are being used. The back-end is build using <b>NodeJS</b> and is connected to a <b>MongoDB</b> database."
+        },{
+            "name": "Environment monitoring system",
+            "job": "API development and embedded system support",
+            "description": "Project for Agile development module - for this project I was assigned to a team of students with various skills, our goal was to develop a hardware box with <b>ESP8266</b> and various <b>environment monitoring sensors</b>, API connected to a database and a front-end mobile application to allow access to environment data and sensor box information depending on user access level. I was responsible for developing an API, creating a database as well as providing support to hardware team. To build API I used <b>NodeJS</b>, and two communication protocols: <b>HTTP</b> for front-end requests and <b>MQMT</b> for communication with the sensor box. For database solution, we agreed to use <b>MongoDB</b>. To perform unit testing <b>Jasmine</b> was used."
+        },{
+            "name": "Events Map",
+            "job": "Web Full-stack developmen",
+            "description": "Project for full-stack development module - a social platform that allows users to create events and search for existing ones depending on various filters as well as view comments, save or attend events. Project front-end was developed with <b>Angular 4</b>, <b>Angular Flex-layout</b> and <b>Material</b>, as well as <b>Google Maps API</b> for map manipulation. For back-end, i used <b>NodeJS</b> and <b>ExpressJS</b>. During project, I learned to securely hash passwords and used <b>MongoDB</b> as a database solution."
+        },{
+            "name": "Wireless lock system",
+            "job": "Mobile Front-end and embedded system developement",
+            "description": "Project for Interactive pervasive computing module - a lock system with NFC tag reader, that is connected to a mobile application over Bluetooth. NFC tags were used to allow only authorized users to lock and unlock the locks, which were built using <b>Arduino</b> Uno microcontroller. A Bluetooth module was added to allow communication between the lock and a mobile application, built using <b>Ionic</b>, which was used to store authorized NFC tag ID's and synchronise data between multiple locks connected, as well as monitor lock states and see unauthorized access attempts."
+        }
+    ],
+    "experience": [
+        {
+            "company": "Sorion Electronics Limited, Birmingham",
+            "img": "assets/sorion-logo.png",
+            "job": "Undergraduate Software Engineer",
+            "report": "Reported to System Director and Software Team Manager",
+            "from": "25 Jun 2016",
+            "to": "29 Sep 2017",
+            "description": "At Sorion Ltd my responsibilities were to develop and maintain new features to company’s core product - Sextans-RT, which involved keeping up-to-date documentation, preparing presentations, participating in regular meetings and technical reviews, writing scripts and sometimes visiting customers site. As core product was developed using <b>VB6</b>, I got familiar with it, however, for new feature development, <b>C#.Net</b> and <b>VB.Net</b> were used to help company transfer to a newer programming language. Software development included work with <b>Subversion</b>, <b>TCP/IP</b>, <b>FTP</b>, <b>Serial ports</b> and <b>Microsoft SQL Server</b>.",
+            "projects": [
+                {
+                    "name": "Pick-to-Light control engine",
+                    "description": "A system whereby operators (usually working on assembly lines) are prompted by light illumination to pick the appropriate parts for an order. For the development of this project, i used <b>VB.Net</b> and Chilkat library for <b>TCP/IP</b> connection to hardware and as an <b>Inter-Process Communication</b> between this software and Sextans-RT. Pick-to-Light CE acted as a generic interface between Sextans-RT and the PTL hardware. End product contained a variety of features including hardware set-up, stock control, database storage, assistance light process with and without the use of barcode scanner, hardware real-time simulation to track expected behaviour and hardware maintenance mode."
+                },{
+                    "name": "Multi-language support tool",
+                    "description": "A multi-language support tool for Sextans-RT. For developing this project I used <b>C#.Net</b>. It consisted of a DLL and a parser software for generating possible phrases, from script and specification files, for translation. The software was used to scan Sextans project scripts and specification files and generate a list of all possible strings that will be displayed to end user, with multiple wildcards where required. This list was then translated by a professional translator and Sextans would use the DLL to replace English text on-screen with the matching translation."
+                },{
+                    "name": "Layered Image Editor",
+                    "description": "An image editing software and a DLL to be used by Sextans-RT. Software, written in <b>C#.Net</b> allow the creation of custom files that contain a base image and multiple layers of various shapes and text over it with various properties such as to make a layer interactive. To make custom image files usable by Sextans-RT from within scripts I had to write a DLL in <b>C#.Net</b> to generate image depending on various configurations and a <b>VB6</b> custom image control, which would use the DLL and then could be used by the Sextans-RT."
+                }
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "Professional working proficiency"
+        },{
+            "name": "Russian",
+            "level": "Professional working proficiency"
+        },{
+            "name": "Lithuanian",
+            "level": "Native"
+        },{
+            "name": "German",
+            "level": "Lower intermediate"
+        }
+    ],
+    "education": {
+        "img": "assets/cov-uni.png",
+        "university": "Coventry Univeristy",
+        "course": "Computing BSc",
+        "from": 2014,
+        "to": 2018,
+        "modules": [
+            "Full-stack development",
+            "Programming, algorithms and data structures",
+            "Computer architecture and networks",
+            "Interactive pervasive computing",
+            "Design for usability",
+            "Agile development",
+            "Intellignet agents",
+            "Enterprise information systems",
+            "German lower intermediate"
+        ]
+    }
+    
+}

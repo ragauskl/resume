@@ -1,2 +1,20 @@
 @import './variables';
 // @import '~sass/variables';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif ;
+    color: $dark ;
+    padding: 0px;
+    margin:0px;
+    min-height: 100%;
+}
+
+.content {
+    max-width: 1500px !important;
+    margin: auto;
+    padding: 0px;
+    box-shadow: 1px 1px 50px rgb(177, 177, 177);
+    margin-bottom: 10px;
+}

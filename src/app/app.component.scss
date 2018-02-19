@@ -1,0 +1,119 @@
+@import '~sass/variables';
+.side {
+    background-color: $secondary-background;
+}
+
+.sub-content {
+    margin: 0px 30px; 
+}
+
+.base {
+    background-color: rgb(255, 255, 255);
+}
+
+.title {
+    background-color: $dark;
+    padding: 10px 0px;
+}
+
+.photo {
+//   -webkit-clip-path: polygon(% 0%, 100% 50%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 50%,  0% 100%);
+}
+
+.wrap {
+    position:relative;
+}
+
+.rectangle{
+    position: absolute; 
+    width: 100%; 
+    left: 0; 
+    top: 0; 
+    height: 49.5%;
+    background: linear-gradient($gradient-light, $gradient-dark); 
+}
+
+.white-box{
+    background-color: $primary-background;
+    padding-left: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    background-color: $primary-background;
+    padding: 0px 10px;
+    text-align:center;
+    margin: 5px 0px;
+    white-space:nowrap;
+  }
+
+.line {
+    height: 3px;
+    background: $gradient-dark;
+    width: 100%;
+}
+
+.name {
+    color: $primary-background;
+    letter-spacing: 5px;
+}
+
+.subtitle{
+    color: $primary-background;
+    font-family: 'Roboto Thin', sans-serif ;
+    letter-spacing: 5px;
+}
+
+.project-title {
+    margin: 0;
+}
+
+.project-info{
+    margin: 5px 0px;
+}
+
+.sector-icon{
+    width: 150px;
+    margin-top: 16px;
+}
+
+.round-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $dark;
+}
+
+.icon-img-s1 {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.icon-img-s2 {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+
+
+.no-bottom-margin{
+    margin-bottom: 0px;
+}
+
+.no-margin{
+    margin: 0px;
+}
+.sm-vertical-margin{
+    margin: 2px 0px;
+}
+
+.mini-font{
+    font-size: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}
