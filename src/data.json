@@ -24,7 +24,7 @@
             "img": "assets/icons/github.svg"
         }
     },
-    "skill-categories": [
+    "skill_categories": [
         {
             "category": "Programming languages",
             "skills": [
