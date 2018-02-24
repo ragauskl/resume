@@ -1,0 +1,20 @@
+@import '~sass/variables';
+.side {
+    background-color: $secondary-background;
+}
+
+.title {
+    background-color: $dark;
+    padding: 10px 0px;
+}
+
+.name {
+    color: $primary-background;
+    letter-spacing: 5px;
+}
+
+.subtitle{
+    color: $primary-background;
+    font-family: 'Roboto Thin', sans-serif ;
+    letter-spacing: 5px;
+}

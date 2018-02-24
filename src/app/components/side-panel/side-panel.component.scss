@@ -1,0 +1,58 @@
+@import '~sass/variables';
+.side {
+    background-color: $secondary-background;
+}
+
+
+.title {
+    background-color: $dark;
+    padding: 10px 0px;
+}
+
+.white-box{
+    background-color: $primary-background;
+    padding-left: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.sector-icon{
+    width: 150px;
+    margin-top: 16px;
+}
+
+.round-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $dark;
+}
+
+.icon-img-s1 {
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.icon-img-s2 {
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+
+
+.no-bottom-margin{
+    margin-bottom: 0px;
+}
+
+.sm-vertical-margin{
+    margin: 2px 0px;
+}
+
+.mini-font{
+    font-size: 15px;
+}
+
+ul {
+    padding-left: 20px;
+}

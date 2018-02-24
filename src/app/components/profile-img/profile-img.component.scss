@@ -1,0 +1,19 @@
+@import '~sass/variables';
+
+.photo {
+//   -webkit-clip-path: polygon(% 0%, 100% 50%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 50%,  0% 100%);
+}
+
+.wrap {
+    position:relative;
+}
+
+.rectangle{
+    position: absolute; 
+    width: 100%; 
+    left: 0; 
+    top: 0; 
+    height: 49.5%;
+    background: linear-gradient($gradient-light, $gradient-dark); 
+}

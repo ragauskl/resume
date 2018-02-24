@@ -1,0 +1,37 @@
+@import '~sass/variables';
+
+.base {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px;
+}
+
+.section-title {
+    background-color: $primary-background;
+    padding: 0px 10px;
+    text-align:center;
+    margin: 5px 0px;
+    white-space:nowrap;
+}
+
+.line {
+    height: 3px;
+    background: $gradient-dark;
+    width: 100%;
+}
+
+.project-title {
+    margin: 0;
+}
+
+.project-info{
+    margin: 5px 0px;
+}
+
+.sector-icon{
+    width: 150px;
+    margin-top: 16px;
+}
+
+.no-margin{
+    margin: 0px;
+}

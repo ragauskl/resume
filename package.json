@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "git-build": "npm run build && rm -fR docs/ && echo \"deleted docs/\" && cp -a dist/. docs/ && echo \"copied dist/\""
   },
   "private": true,
   "dependencies": {

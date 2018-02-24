@@ -1,139 +1,19 @@
 <div class="content">
-    <div class="test" fxFill fxLayout="row" fxLayout.lt-md="column" fxlayoutwrap fxLayoutAlign="start start">
+    <div fxFill fxLayout="row" fxHide.lt-md fxLayoutAlign="start start">
         <!-- SIDE PANEL -->
-        <div class="side" fxLayout="column" fxLayoutGap="30px" fxFlex="30%" fxFlexAlign="stretch">
-            <div class="wrap" width="100%">
-                <div class="rectangle"></div>
-                <img class="photo" src="assets/photo-wflip.jpg" alt="Profile image" width="100%">
-            </div>
-            <!-- CONTACTS -->
-            <div class="sub-content" fxLayout="column">
-                <div class="white-box">
-                    <p>CONTACTS</p>
-                </div>
-            
-                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-                    <div class="round-icon" fxLayoutAlign="center center">
-                        <img class="icon-img-s1" src="{{cv_data.contacts.location.img}}" alt="contact icon">
-                    </div>
-                    <p>{{cv_data.contacts.location.value}}</p>
-                </div>
-                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-                    <div class="round-icon" fxLayoutAlign="center center">
-                        <img class="icon-img-s1" src="{{cv_data.contacts.email.img}}" alt="contact icon">
-                    </div>
-                    <p>{{cv_data.contacts.email.value}}</p>
-                </div>
-                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-                    <div class="round-icon" fxLayoutAlign="center center">
-                        <img class="icon-img-s1" src="{{cv_data.contacts.mobile.img}}" alt="contact icon">
-                    </div>
-                    <p>{{cv_data.contacts.mobile.value}}</p>
-                </div>
-                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-                    <div class="round-icon" fxLayoutAlign="center center">
-                        <img class="icon-img-s2" src="{{cv_data.contacts.linkedin.img}}" alt="contact icon">
-                    </div>
-                    <p>{{cv_data.contacts.linkedin.value}}</p>
-                </div>
-                <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-                    <div class="round-icon" fxLayoutAlign="center end">
-                        <img class="icon-img-s1" src="{{cv_data.contacts.github.img}}" alt="contact icon">
-                    </div>
-                    <p>{{cv_data.contacts.github.value}}</p>
-                </div>
-            </div>
-            <!-- LANGUAGES -->
-            <div class="sub-content" fxLayout="column">
-                <div class="white-box">
-                    <p>LANGUAGES</p>
-                </div>
-                <div *ngFor="let language of cv_data.languages" fxLayout="column">
-                    <p class="no-bottom-margin">{{language.name}}</p>
-                    <p class="sm-vertical-margin mini-font">{{language.level}}</p>
-                </div>
-            </div>
-            <!-- EDUCATION -->
-            <div class="sub-content" fxLayout="column">
-                <div class="white-box">
-                    <p>EDUCATION</p>
-                </div>
-                <img class="sector-icon" src="{{cv_data.education.img}}" alt="uni icon">
-                <p class="no-bottom-margin">{{cv_data.education.university}}</p>
-                <p class="sm-vertical-margin"><b>{{cv_data.education.course}}</b></p>
-                <p class="sm-vertical-margin">{{cv_data.education.from}} - {{cv_data.education.to}}</p>
-                <p class="sm-vertical-margin"></p>
-                <p class="sm-vertical-margin">Subjects studied:</p>
-                <ul>
-                    <li *ngFor="let module of cv_data.education.modules">{{module}}</li>
-                </ul>
-            </div>
+        <div class="side" fxLayout="column" fxFlex="30%" fxFlexAlign="stretch">
+                <app-side-panel></app-side-panel>
         </div>
         <!-- MAIN PANEL -->
-        <div #mainPanel fxLayout="column" fxLayoutGap="30px" fxFlex="70%">
-            <div class="title">
-                <h1 class="name sub-content">{{cv_data.name}}</h1>
-                <h2 class="subtitle sub-content">{{cv_data.title}}</h2>
-            </div>
-            <div class="base" fxLayout="column" fxLayoutGap="20px">
-                <!-- INTRODUCTION -->
-                <div class="sub-content" fxLayoutAlign="center center">
-                    <div class="line"></div>
-                    <h3 class="section-title" ><span>INTRODUCTION</span></h3>
-                    <div class="line"></div>
-                </div>
-                <div class="sub-content" fxLayout="row" fxLayoutAlign="start start">
-                    <p class="no-margin" [innerHTML]="cv_data.intro"></p>
-                </div>
-                <!-- SKILLS -->
-                <div class="sub-content" fxLayoutAlign="center center">
-                    <div class="line"></div>
-                    <h3 class="section-title" ><span>SKILLS</span></h3>
-                    <div class="line"></div>
-                </div>
-                <div class="sub-content" fxLayout="row" fxLayoutAlign="center center">
-                    <app-skill-graph [parentWidth]="getParentWidth()"></app-skill-graph>
-                </div>
-
-                <div class="sub-content" fxLayoutAlign="center center">
-                    <div class="line"></div>
-                    <h3 class="section-title" ><span>PROJECT PORTFOLIO</span></h3>
-                    <div class="line"></div>
-                </div>
-                <div class="sub-content" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-                   <div *ngFor="let project of cv_data.projects" fxLayout="column" fxLayoutAlign="start start">
-                        <p class="project-title"> <b>{{project.name}}</b> - {{project.job}}</p>
-                        <p class="project-info" [innerHTML]="project.description"></p>
-                   </div>
-                </div>
-
-                <div class="sub-content" fxLayoutAlign="center center">
-                    <div class="line"></div>
-                    <h3 class="section-title" ><span>RELEVANT EXPIERENCE</span></h3>
-                    <div class="line"></div>
-                </div>
-
-                <div class="sub-content" fxLayoutAlign="start start">
-                    <div *ngFor="let job of cv_data.experience" fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="10px">
-                        <img class="sector-icon" src="{{job.img}}" alt="Workplace logo">
-                        <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-                                <div fxLayout="column" fxLayoutAlign="start start">
-                                    <p class="project-info"> <b>{{job.job}}</b></p>
-                                    <p class="project-title" >{{job.company}}</p>
-                                    <p class="project-title" > {{job.report}}</p>
-                                    <p class="project-title" > {{job.from}} - {{job.to}}</p>
-                                </div>
-                                <p class="job-description" [innerHTML]="job.description"></p>
-
-                                <div *ngFor="let project of job.projects" fxLayout="column" fxLayoutAlign="start start">
-                                    <p class="project-title"> <b>{{project.name}}</b></p>
-                                    <p class="project-info" [innerHTML]="project.description"></p>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+        <div fxLayout="column" fxFlex="70%" fxFlexAlign="stretch">
+            <app-header></app-header>
+            <app-main-panel></app-main-panel>
         </div>
+    </div>
+
+    <div fxFill fxLayout="column" fxHide.gt-md fxLayoutAlign="start start" fxFlexAlign="stretch">
+        <app-header fxFlexAlign="stretch"></app-header>
+        <app-side-panel fxFlexAlign="stretch" class="side"></app-side-panel>
+        <app-main-panel></app-main-panel>
     </div>
 </div>

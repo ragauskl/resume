@@ -1,4 +1,4 @@
-import { Component, ViewChild, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as data from '../data.json';
 
 @Component({
@@ -8,14 +8,7 @@ import * as data from '../data.json';
 })
 export class AppComponent implements OnInit {
   cv_data = (<any>data);
-  @ViewChild('mainPanel') mainPanel: ElementRef;
-  @ViewChild('myCanvas') canvasRef: ElementRef;
 
   ngOnInit() {
-  }
-
-
-  getParentWidth() {
-    return this.mainPanel.nativeElement.offsetWidth;
   }
 }
