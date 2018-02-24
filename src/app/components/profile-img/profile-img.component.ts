@@ -12,4 +12,10 @@ export class ProfileImgComponent implements OnInit {
   ngOnInit() {
   }
 
+  isEdge() {
+    if (navigator.userAgent.indexOf('Edge') >= 0) {
+      return true;
+    }
+    return false;
+  }
 }
