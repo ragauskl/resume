@@ -32,7 +32,7 @@ const appRoutes: Routes = [
     FlexLayoutModule,
     FormsModule,
     MatButtonModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, { useHash: true })
   ],
   providers: [],
   bootstrap: [AppComponent]
