@@ -9,6 +9,5 @@ import * as data from '../data.json';
 export class AppComponent implements OnInit {
   cv_data = (<any>data);
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 }

@@ -35,3 +35,16 @@
 .no-margin{
     margin: 0px;
 }
+
+.demo-button {
+    color: $gradient-light;
+    border: 1px solid $gradient-light;
+    height: 30px;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 959px) {
+    .demo-button {
+        width: 100%;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as data from '../../../data.json';
 
 @Component({
@@ -8,6 +8,7 @@ import * as data from '../../../data.json';
 })
 export class MainPanelComponent implements OnInit {
   cv_data = (<any>data);
+  @Input() pdfView = false;
 
   constructor() { }
 

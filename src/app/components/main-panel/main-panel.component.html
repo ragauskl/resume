@@ -25,7 +25,10 @@
     </div>
     <div class="sub-content" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
        <div *ngFor="let project of cv_data.projects" fxLayout="column" fxLayoutAlign="start start">
-            <p class="project-title"> <b>{{project.name}}</b> - {{project.job}}</p>
+            <div fxFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="start start">
+                <p class="project-title"> <b>{{project.name}}</b> - {{project.job}}</p>
+                <a *ngIf="project.link && !pdfView" href="{{project.link}}" target="_blank" mat-button class="demo-button">Demo</a>
+            </div> 
             <p class="project-info" [innerHTML]="project.description"></p>
        </div>
     </div>
@@ -47,11 +50,6 @@
                         <p class="project-title" > {{job.from}} - {{job.to}}</p>
                     </div>
                     <p class="job-description" [innerHTML]="job.description"></p>
-                    <h4 >PROJECTS:</h4>
-                    <div *ngFor="let project of job.projects" fxLayout="column" fxLayoutAlign="start start">
-                        <p class="project-title"> <b>{{project.name}}</b></p>
-                        <p class="project-info" [innerHTML]="project.description"></p>
-                    </div>
             </div>
         </div>
     </div>
