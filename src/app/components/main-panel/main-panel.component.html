@@ -24,7 +24,8 @@
         <div class="line"></div>
     </div>
     <div class="sub-content" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-       <div *ngFor="let project of cv_data.projects" fxLayout="column" fxLayoutAlign="start start">
+       <div *ngFor="let project of cv_data.projects; index as i" fxLayout="column" fxLayoutAlign="start start">
+            <div class="seperator" *ngIf="i !== 0"></div>
             <div fxFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="start start">
                 <p class="project-title"> <b>{{project.name}}</b> - {{project.job}}</p>
                 <a *ngIf="project.link && !pdfView" href="{{project.link}}" target="_blank" mat-button class="demo-button">Demo</a>
@@ -47,7 +48,7 @@
                         <p class="project-info"> <b>{{job.job}}</b></p>
                         <p class="project-title" >{{job.company}}</p>
                         <p class="project-title" > {{job.report}}</p>
-                        <p class="project-title" > {{job.from}} - {{job.to}}</p>
+                        <p class="project-title" > {{job.from}} - {{job.to}} ({{job.length}})</p>
                     </div>
                     <p class="job-description" [innerHTML]="job.description"></p>
             </div>

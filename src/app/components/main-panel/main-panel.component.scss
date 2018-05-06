@@ -43,6 +43,12 @@
     line-height: 30px;
 }
 
+.seperator {
+    width: 100%;
+    border-bottom: 1px dashed $gradient-light;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 959px) {
     .demo-button {
         width: 100%;
