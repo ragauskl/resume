@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('my-resume App', () => {
+describe('resume App', () => {
   let page: AppPage;
 
   beforeEach(() => {
