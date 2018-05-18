@@ -13,6 +13,7 @@ import { SidePanelComponent } from './components/side-panel/side-panel.component
 import { MainPanelComponent } from './components/main-panel/main-panel.component';
 import { ResumeComponent } from './resume/resume.component';
 
+
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent },
   { path: ':view', component: ResumeComponent }

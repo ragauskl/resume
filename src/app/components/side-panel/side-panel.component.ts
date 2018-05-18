@@ -9,7 +9,7 @@ import * as data from '../../../data.json';
 export class SidePanelComponent implements OnInit {
   cv_data = (<any>data);
   @Input() pdfView = false;
-
+  @Input() confidential = false;
   constructor() { }
 
   ngOnInit() { }

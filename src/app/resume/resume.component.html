@@ -1,9 +1,9 @@
-<div class="content">
-  <!-- MOBILE VIEW -->
+<div id="cv" class="content">
+  <!-- WEB VIEW -->
   <div fxFill fxLayout="row" fxHide.lt-md fxLayoutAlign="start start">
       <!-- SIDE PANEL -->
       <div class="side" fxLayout="column" fxFlex="30%" fxFlexAlign="stretch">
-          <app-side-panel [(pdfView)]='pdfView'></app-side-panel>
+          <app-side-panel [(pdfView)]='pdfView' [(confidential)]='confidential'></app-side-panel>
       </div>
       <!-- MAIN PANEL -->
       <div fxLayout="column" fxFlex="70%" fxFlexAlign="stretch">
@@ -12,10 +12,10 @@
       </div>
   </div>
 
-  <!-- WEB VIEW -->
+  <!-- MOBILE VIEW -->
   <div fxFill fxLayout="column" fxHide.gt-sm fxLayoutAlign="start start" fxFlexAlign="stretch">
       <app-header [(pdfView)]='pdfView' fxFlexAlign="stretch"></app-header>
-      <app-side-panel [(pdfView)]='pdfView' fxFlexAlign="stretch" class="side"></app-side-panel>
+      <app-side-panel [(pdfView)]='pdfView' [(confidential)]='confidential' fxFlexAlign="stretch" class="side"></app-side-panel>
       <app-main-panel [(pdfView)]='pdfView'></app-main-panel>
   </div>
 </div>
