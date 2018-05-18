@@ -1,7 +1,7 @@
 <div class="side" fxLayout="column" fxLayoutGap="20px">
   <app-profile-img></app-profile-img>
   <!-- CONTACTS -->
-  <div class="sub-content" fxLayout="column">
+  <div *ngIf="!confidential" class="sub-content" fxLayout="column">
       <div class="white-box">
           <p>CONTACTS</p>
       </div>
@@ -12,13 +12,13 @@
           </div>
           <p>{{cv_data.contacts.location.value}}</p>
       </div>
-      <div *ngIf="!confidential" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
+      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
           <div class="round-icon" fxLayoutAlign="center center">
               <img class="icon-img-s1" src="{{cv_data.contacts.email.img}}" alt="contact icon">
           </div>
           <p><a href="mailto:{{cv_data.contacts.email.value}}">{{cv_data.contacts.email.value}}</a></p>
       </div>
-      <div *ngIf="!confidential" fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
+      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
           <div class="round-icon" fxLayoutAlign="center center">
               <img class="icon-img-s1" src="{{cv_data.contacts.mobile.img}}" alt="contact icon">
           </div>
