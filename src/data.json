@@ -1,8 +1,8 @@
 {
     "name": "LINA RAGAUSKAITE",
     "title": "Full-stack JavaScript Developer",
-    "intro": "Hi, I'm a passionate Full-stack JavaScript Developer. <b>Eager to learn</b>, <b>curious</b>, <b>determined</b> and <b>responsible</b> are four words that I believe describe me the best. I started programming from 10th grade and since then I realised that Software Engineering is something I would be thrilled to work on daily for the rest of my life. Initially, I was focusing on Software Engineering and took on <b>placement</b> as an <b>Undergraduate Software Engineer</b> in Sorion Ltd, automotive industry. However, during placement, over my free time, I gained a huge interest in Full-stack Development for both websites and mobile applications.<br><br>Now I work with <b>Angular</b>, <b>Ionic</b> and <b>Node.js</b> and have a bit more than a <b>year of experience with these frameworks</b>.  I love working on both sides of the spectrum, Front-end and Back-end, however, I feel that if I had to choose, Back-end would be my stronger side. I <b>constantly work on improving my skills</b> and enjoy learning new frameworks or programming languages (e.g. Go). Besides coding, I also like to work with graphic design software and pervasive systems.<br><br> I work well both in teams and on my own and have <b>experience working in Agile environment</b>. I'm also an active person and love outdoor and indoor activities.",
-    "availability": "I will be available to start work from the <b>1st of June</b> and I am looking for a <b>Permanent Full-stack (Angular 2+/Node.js) or Back-end (Node.js) JavaScript developer</b> role in a 10-mile commute distance from <b>Sutton Coldfield</b>. Closer opportunities will be a priority.",
+    "intro": "Hi, I'm a passionate Full-stack JavaScript Developer. <b>Eager to learn</b>, <b>curious</b>, <b>determined</b> and <b>responsible</b> are four words that I believe describe me the best. I started programming from 10th grade and since then realised that Software Engineering is something I would be thrilled to work on daily for the rest of my life. Initially, I was focusing on Software Engineering and took on <b>placement</b> as an <b>Undergraduate Software Engineer</b> in Sorion Ltd, automotive industry. However, during placement, over my free time, I gained a huge interest in Full-stack Development for both websites and mobile applications.<br><br>Now I work with <b>Angular</b>, <b>Ionic</b> and <b>Node.js</b> and have a bit more than a <b>year of experience with these frameworks</b>.  I love working on both sides of the spectrum, Front-end and Back-end, however, I feel that if I had to choose, Back-end would be my stronger side. I <b>constantly work on improving my skills</b> and enjoy learning new frameworks or programming languages (e.g. Go). Besides coding, I also like to work with graphic design software and pervasive systems.<br><br> I work well both in teams and on my own and have <b>experience working in Agile environment</b>. I'm also an active person and love outdoor and indoor activities.",
+    "availability": "<b>Available for immediate start</b> and looking for a <b>Permanent Full-stack (Angular 2+/Node.js) or Back-end (Node.js) JavaScript developer</b> role in a 10-mile commute distance from <b>Sutton Coldfield</b>. Closer opportunities will be a priority.",
     "contacts": {
         "location": {
             "value": "Birmingham, UK",
@@ -25,103 +25,6 @@
             "img": "assets/icons/github.svg"
         }
     },
-    "skill_categories": [
-        {
-            "category": "Programming languages",
-            "skills": [
-                {
-                    "name": "JavaScript",
-                    "percentage": 60,
-                    "img": "assets/icons/javascript.svg"
-                },{
-                    "name": "TypeScript",
-                    "percentage": 55,
-                    "img": "assets/icons/typescript.svg"
-                },{
-                    "name": "HTML",
-                    "percentage": 70,
-                    "img": "assets/icons/html.svg"
-                }
-            ]
-        },{
-            "category": "Database solutions",
-            "skills":[
-                {
-                    "name": "MongoDB",
-                    "percentage": 55,
-                    "img": "assets/icons/mongodb.svg"
-                },{
-                    "name": "MSQL",
-                    "percentage": 50,
-                    "img": "assets/icons/msql.svg"
-                }
-            ]
-        },{
-            "category": "Frameworks",
-            "skills":[
-                {
-                    "name": "Angular",
-                    "percentage": 55,
-                    "img": "assets/icons/angular.svg"
-                },{
-                    "name": "NodeJS",
-                    "percentage": 50,
-                    "img": "assets/icons/nodejs.svg"
-                },{
-                    "name": "Ionic",
-                    "percentage": 60,
-                    "img": "assets/icons/ionic.svg"
-                },{
-                    "name": "Electron",
-                    "percentage": 35,
-                    "img": "assets/icons/electron.svg"
-                },{
-                    "name": "SCSS",
-                    "percentage": 60,
-                    "img": "assets/icons/sass.svg"
-                }
-            ]
-        },{
-            "category": "Version control",
-            "skills":[
-                {
-                    "name": "GIT",
-                    "percentage": 55,
-                    "img": "assets/icons/git.svg"
-                },{
-                    "name": "Subversion",
-                    "percentage": 25,
-                    "img": "assets/icons/subversion.svg"
-                }
-            ]
-        },{
-            "category": "Graphic and Web software",
-            "skills":[
-                {
-                    "name": "Photoshop",
-                    "percentage": 55,
-                    "img": "assets/icons/adobe-photoshop.svg"
-                },{
-                    "name": "Illustrator",
-                    "percentage": 35,
-                    "img": "assets/icons/adobe-illustrator.svg"
-                },{
-                    "name": "Adobe XD",
-                    "percentage": 80,
-                    "img": "assets/icons/adobe-adobe-xd.svg"
-                }
-            ]
-        },{
-            "category": "Embedded systems",
-            "skills":[
-                {
-                    "name": "Arduino",
-                    "percentage": 50,
-                    "img": "assets/icons/arduino.svg"
-                }
-            ]
-        }
-    ],
     "projects": [
         {
             "name": "Route Fox",
@@ -131,17 +34,17 @@
         },{
             "name": "Environment monitoring system",
             "job": "API development and Embedded System support",
-            "description": "Project for Agile development module - for this project I was assigned to a team of students with various skills, our goal was to develop a hardware box with <b>ESP8266</b> and various <b>environment monitoring sensors</b>, API connected to a database and a Front-end mobile application to allow access to environment data and sensor box information depending on user access level. I was responsible for developing the API, creating a database as well as providing support to hardware team. To build API I used <b>NodeJS</b>, and two communication protocols: <b>HTTP</b> for Front-end requests and <b>MQMT</b> for communication with the sensor box. For database solution, we agreed to use <b>MongoDB</b>. To perform unit testing <b>Jasmine</b> was used."
+            "description": "Project for Agile Development module - for this project I was assigned to a team of students with various skills, our goal was to develop a hardware box with <b>ESP8266</b> and various <b>environment monitoring sensors</b>, API connected to a database and a Front-end mobile application to allow access to environment data and sensor box information depending on user access level. I was responsible for developing the API, creating a database as well as providing support to hardware team. To build API I used <b>NodeJS</b>, and two communication protocols: <b>HTTP</b> for Front-end requests and <b>MQMT</b> for communication with the sensor box. For database solution, we agreed to use <b>MongoDB</b>. To perform unit testing <b>Jasmine</b> was used."
         },{
             "name": "Events Map",
             "job": "Web Full-stack development",
             "link": "https://youtu.be/z-jfPXoeV1I",
-            "description": "Project for Full-stack development module - a social platform that allows users to create events and search for existing ones depending on various filters as well as view comments, save or attend events. Project Front-end was developed with <b>Angular 4</b>, <b>Angular Flex-layout</b> and <b>Material</b>, as well as <b>Google Maps API</b> for map manipulation. For Back-end, I used <b>NodeJS</b> and <b>ExpressJS</b>. During the project, I learned to securely hash passwords and used <b>MongoDB</b> as a database solution."
+            "description": "Project for Full-stack Development module - a social platform that allows users to create events and search for existing ones depending on various filters as well as view comments, save or attend events. Project Front-end was developed with <b>Angular 4</b>, <b>Angular Flex-layout</b> and <b>Material</b>, as well as <b>Google Maps API</b> for map manipulation. For Back-end, I used <b>NodeJS</b> and <b>ExpressJS</b>. During the project, I learned to securely hash passwords and used <b>MongoDB</b> as a database solution."
         },{
             "name": "Wireless lock system",
-            "job": "Mobile Front-end and Embedded System developement",
+            "job": "Mobile Front-end and Embedded System development",
             "link": "https://youtu.be/qECn2Wm8lOM",
-            "description": "Project for Interactive pervasive computing module - a lock system with NFC tag reader, that is connected to a mobile application over Bluetooth. NFC tags were used to allow only authorized users to lock and unlock the locks, which were built using <b>Arduino</b> Uno microcontroller. A Bluetooth module was added to allow communication between the lock and a mobile application, built using <b>Ionic</b>, which was used to store authorized NFC tag ID's and synchronise data between multiple locks connected, as well as monitor lock states and see unauthorized access attempts."
+            "description": "Project for Interactive Pervasive Computing module - a lock system with NFC tag reader, that is connected to a mobile application over Bluetooth. NFC tags were used to allow only authorized users to lock and unlock the locks, which were built using <b>Arduino</b> Uno microcontroller. A Bluetooth module was added to allow communication between the lock and a mobile application, built using <b>Ionic</b>, which was used to store authorized NFC tag ID's and synchronise data between multiple locks connected, as well as monitor lock states and see unauthorized access attempts."
         }
     ],
     "experience": [
@@ -153,7 +56,7 @@
             "from": "Jun 2016",
             "to": "Oct 2017",
             "length": "1 yr 3 mos",
-            "description": "At Sorion Ltd my responsibilities were to develop and maintain new features to company's core product - Sextans-RT, which involved keeping up-to-date documentation, preparing presentations, participating in regular meetings and technical reviews, writing scripts and sometimes visiting customers site. I worked with C#.Net and VB.Net and helped the company transition from VB6. During the placement, I also gained experience with Subversion, TCP/IP, FTP, Serial ports and Microsoft SQL Server.<br /><br />Some of the projects I have worked on include a <b>Pick-To-Light System</b> (a light-directed aid for the production line), a <b>Multi-Language Support Tool</b> for the Sextans-RT and a <b>Layered Image Editor</b>."
+            "description": "Responsible for development and maintenance of new features for the company's core product - Sextans-Rt. This involved keeping up-to-date documentation, preparing presentations, participating in regular meetings and technical reviews, writing scripts and sometimes visiting customers site. Projects were written in C#.Net/VB.Net and included the use of Subversion, TCP/IP, FTP and Microsoft SQL Server.<br /><br />Some of the projects I have worked on include a <b>Pick-To-Light System</b> (a light-directed aid for the production line), a <b>Multi-Language Support Tool</b> for the Sextans-RT and a <b>Layered Image Editor</b>."
         }
     ],
     "languages": [
@@ -174,7 +77,7 @@
     "education": {
         "img": "assets/cov-uni.png",
         "university": "Coventry Univeristy",
-        "course": "Computing BSc",
+        "course": "1st Class 'Computing' Bachelor of Science",
         "from": 2014,
         "to": 2018,
         "modules": [
