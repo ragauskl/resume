@@ -6,11 +6,13 @@
     "ng": "ng",
     "start": "ng serve --open",
     "build": "ng build --prod --base-href /resume/",
+    "build-noref": "ng build --prod --base-href /",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "git-build": "npm run build && rm -fR docs/ && echo \"deleted docs/\" && cp -a dist/. docs/ && echo \"copied dist/\"",
-    "pdf": "node pdf.js"
+    "make-docs": "rm -fR docs/ && echo \"deleted docs/\" && cp -a dist/. docs/ && echo \"copied dist/\"",
+    "pdf": "node pdf.js",
+    "build-live": "npm run pdf && npm run pdf"
   },
   "private": true,
   "dependencies": {
