@@ -4,14 +4,13 @@ const fs = require('fs')
 // const { spawn } = require('child_process')
 let server, page, browser
 
-const pdfFilePath = './src/assets/Lina_Ragauskaite.pdf'
+const pdfFilePath = './src/assets/Lina_Ragauskaite_c.pdf'
 const buildLatestForPdf = () => {
   shell.exec('npm run build-noref')
 }
 
 const buildLatestForLive = () => {
   shell.exec('npm run build')
-  shell.echo('RUN npm run make-docs')
 }
 const createBrowser = async () => {
   browser = await puppeteer.launch({headless: true, devtools: false})
@@ -25,7 +24,7 @@ const createServer = () => {
 }
 
 const connectPage = async () => {
-  return page.goto('http://localhost:4200/#/pdf', {waitUntil: ['networkidle2', 'load']})
+  return page.goto('http://localhost:4200/#/pdf?conf=1', {waitUntil: ['networkidle2', 'load']})
 }
 
 // const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms))

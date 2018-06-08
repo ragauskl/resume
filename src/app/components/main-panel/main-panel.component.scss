@@ -27,9 +27,15 @@
     margin: 5px 0px;
 }
 
-.sector-icon{
+.icon-container {
     width: 150px;
-    margin-top: 16px;
+    height: 150px;
+    margin-top: 10px;
+
+    .sector-icon{
+        max-width: 150px;
+        max-height: 90px;
+    }
 }
 
 .no-margin{

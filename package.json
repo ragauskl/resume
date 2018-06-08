@@ -11,8 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "make-docs": "rm -fR docs/ && echo \"deleted docs/\" && cp -a dist/. docs/ && echo \"copied dist/\"",
-    "pdf": "node pdf.js",
-    "build-live": "npm run pdf && npm run pdf"
+    "pdf": "node pdf.js"
   },
   "private": true,
   "dependencies": {

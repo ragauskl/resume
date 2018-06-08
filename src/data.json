@@ -2,7 +2,7 @@
     "name": "LINA RAGAUSKAITE",
     "title": "Full-stack JavaScript Developer",
     "intro": "Hi, I'm a passionate Full-stack JavaScript Developer. <b>Eager to learn</b>, <b>curious</b>, <b>determined</b> and <b>responsible</b> are four words that I believe describe me the best. I started programming from 10th grade and since then realised that Software Engineering is something I would be thrilled to work on daily for the rest of my life. Initially, I was focusing on Software Engineering and took on <b>placement</b> as an <b>Undergraduate Software Engineer</b> in Sorion Ltd, automotive industry. However, during placement, over my free time, I gained a huge interest in Full-stack Development for both websites and mobile applications.<br><br>Now I work with <b>Angular</b>, <b>Ionic</b> and <b>Node.js</b> and have a bit more than a <b>year of experience with these frameworks</b>.  I love working on both sides of the spectrum, Front-end and Back-end, however, I feel that if I had to choose, Back-end would be my stronger side. I <b>constantly work on improving my skills</b> and enjoy learning new frameworks or programming languages (e.g. Go). Besides coding, I also like to work with graphic design software and pervasive systems.<br><br> I work well both in teams and on my own and have <b>experience working in Agile environment</b>. I'm also an active person and love outdoor and indoor activities.",
-    "availability": "<b>Available for immediate start</b> and looking for a <b>Permanent Full-stack (Angular 2+/Node.js) or Back-end (Node.js) JavaScript developer</b> role in a 10-mile commute distance from <b>Sutton Coldfield</b>. Closer opportunities will be a priority.",
+    "availability": "",
     "contacts": {
         "location": {
             "value": "Birmingham, UK",
@@ -49,6 +49,15 @@
     ],
     "experience": [
         {
+            "company": "Geospatial Insight Limited, Coleshill",
+            "img": "assets/geospatial-logo.png",
+            "job": "Full-stack JavaScrip Developer",
+            "report": "",
+            "from": "Jun 2018",
+            "to": "Present",
+            "length": "",
+            "description": ""
+        }, {
             "company": "Sorion Electronics Limited, Birmingham",
             "img": "assets/sorion-logo.png",
             "job": "Undergraduate Software Engineer",

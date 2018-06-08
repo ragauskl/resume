@@ -9,7 +9,7 @@
         <p class="no-margin" [innerHTML]="cv_data.intro"></p>
     </div>
      <!-- Availability -->
-     <div class="sub-content" fxLayoutAlign="center center">
+     <div *ngIf="cv_data.availability" class="sub-content" fxLayoutAlign="center center">
             <div class="line"></div>
             <h3 class="section-title" ><span>ROLE & AVAILABILITY</span></h3>
             <div class="line"></div>
@@ -49,17 +49,19 @@
         <div class="line"></div>
     </div>
 
-    <div class="sub-content" fxLayoutAlign="start start">
+    <div class="sub-content" fxLayoutAlign="start start" fxLayout="column">
         <div *ngFor="let job of cv_data.experience" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-            <img class="sector-icon" src="{{job.img}}" alt="Workplace logo">
+            <div class="icon-container" fxLayoutAlign="center start">
+                <img class="sector-icon" src="{{job.img}}" alt="Workplace logo">
+            </div>
             <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-                    <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
-                        <p class="project-info"> <b>{{job.job}}</b></p>
-                        <p class="project-title" >{{job.company}}</p>
-                        <p class="project-title" > {{job.report}}</p>
-                        <p class="project-title" > {{job.from}} - {{job.to}} ({{job.length}})</p>
-                    </div>
-                    <p class="job-description" [innerHTML]="job.description"></p>
+                <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
+                    <p class="project-info"> <b>{{job.job}}</b></p>
+                    <p class="project-title" >{{job.company}}</p>
+                    <p *ngIf="job.report" class="project-title" > {{job.report}}</p>
+                    <p class="project-title" > {{job.from}} - {{job.to}} {{job.length ? '('+job.length+')' : ''}}</p>
+                </div>
+                <p class="job-description" [innerHTML]="job.description"></p>
             </div>
         </div>
     </div>
