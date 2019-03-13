@@ -15,8 +15,7 @@ import { ResumeComponent } from './resume/resume.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: ResumeComponent },
-  { path: ':view', component: ResumeComponent }
+  { path: '', component: ResumeComponent }
 ];
 
 @NgModule({

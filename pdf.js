@@ -25,7 +25,7 @@ const createServer = () => {
 }
 
 const connectPage = async () => {
-  return page.goto('http://localhost:4200/#/pdf', {waitUntil: ['networkidle2', 'load']})
+  return page.goto('http://localhost:4200/?view=pdf', {waitUntil: ['networkidle2', 'load']})
 }
 
 // const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms))

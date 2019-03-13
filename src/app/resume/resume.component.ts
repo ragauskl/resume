@@ -14,13 +14,12 @@ export class ResumeComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
-      const view = params.get('view');
-      this.pdfView = view === 'pdf';
-    });
     this.route.queryParams.subscribe(params => {
       if (params.conf) {
         this.confidential = params.conf === '1';
+      }
+      if (params.view) {
+        this.pdfView = params.view === 'pdf';
       }
     });
   }
