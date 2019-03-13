@@ -1,5 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import * as data from '../../data.json';
+import { Component, OnInit } from '@angular/core';
+import data from '../../data.json';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

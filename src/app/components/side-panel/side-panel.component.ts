@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as data from '../../../data.json';
+import data from '../../../data.json';
 
 @Component({
   selector: 'app-side-panel',
@@ -10,7 +10,9 @@ export class SidePanelComponent implements OnInit {
   cv_data = (<any>data);
   @Input() pdfView = false;
   @Input() confidential = false;
-  constructor() { }
+  constructor() {
+    console.log('this.cv_data:', this.cv_data);
+   }
 
   ngOnInit() { }
 

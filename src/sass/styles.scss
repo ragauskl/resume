@@ -21,10 +21,16 @@ body{
 }
 
 .sub-content {
-    margin: 0px 30px; 
+    margin: 0px 30px;
 }
 
 a {
     color: inherit; /* blue colors for links too */
     text-decoration: inherit; /* no underline */
   }
+
+.outdated {
+    color: rgba($color: #fff, $alpha: 0.5);
+    font-weight: normal;
+    font-style: italic;
+}

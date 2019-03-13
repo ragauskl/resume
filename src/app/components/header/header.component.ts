@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import * as data from '../../../data.json';
+import data from '../../../data.json';
 
 @Component({
   selector: 'app-header',
