@@ -24,7 +24,7 @@
         <div class="line"></div>
     </div>
     <div class="sub-content" fxLayout="row" fxLayoutAlign="center center">
-        <img width="100%" src="assets/skills.svg" alt="Skills chart">
+        <img width="100%" src="assets/skills-2.svg" alt="Skills chart">
     </div>
 
     <div class="sub-content" fxLayoutAlign="center center">
@@ -38,7 +38,7 @@
             <div fxFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="start start">
                 <p class="project-title"> <b>{{project.name}}</b> - {{project.job}}</p>
                 <a *ngIf="project.link && !pdfView" href="{{project.link}}" target="_blank" mat-button class="demo-button">Demo</a>
-            </div> 
+            </div>
             <p class="project-info" [innerHTML]="project.description"></p>
        </div>
     </div>
