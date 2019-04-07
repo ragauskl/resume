@@ -1,7 +1,7 @@
 {
   "name": "LINA RAGAUSKAITE",
   "title": "Full-stack TypeScript Developer & DevOps Engineer",
-  "intro": "<strong>Eager to learn</strong>, <strong>curious</strong>, <strong>determined</strong> and <strong>responsible</strong> are four words that I believe describe me the best. I started programming from 10th grade and since then realised that Software Engineering is something I would be thrilled to work on daily for the rest of my life. Initially, I was focusing on Software Engineering,&nbsp;however with time, I gained a huge interest in Full-stack Development for both websites and mobile applications.<br /><br />Now I mostly work with <strong>Angular</strong>,&nbsp;<strong>Node.js and use Google Cloud Platform.</strong>&nbsp;Also I'm learning GoLang to have more experience working with native programming languages.<br />I enjoy working on both sides of the spectrum, Front-end and Back-end, however, if I had to make a choice, I would pick Back-end and DevOps, as I find it more interesting, because it's potentially more complex and challenging than Front-end can be. I <strong>constantly work on improving my skills and knowledge</strong> and enjoy learning new and better ways of solving problems and acomplishing tasks. As a result, with every new personal project, I aim to include at least one feature/problem that will require a solution for which I will have to learn something new.<br /><br />Besides coding, I also like to work with graphic design software and pervasive systems.<br /><br /> I work well both in teams and on my own and have <strong>experience working in Agile environment</strong>. I'm also an active person and love outdoor and indoor activities.",
+  "intro": "<strong>Eager to learn</strong>, <strong>curious</strong>, <strong>determined</strong> and <strong>responsible</strong> are four words that I believe describe me the best. I started programming from 10th grade and since then realised that Software Engineering is something I would be thrilled to work on daily for the rest of my life. Initially, I was focusing on Software Engineering,&nbsp;however with time, I gained a huge interest in Full-stack Development for both websites and mobile applications.<br /><br />Now I mostly work with <strong>Angular</strong>,&nbsp;<strong>Node.js and use Google Cloud Platform.</strong>&nbsp;Also I'm learning GoLang to have more experience working with native programming languages.<br />I enjoy working on both sides of the spectrum, Front-end and Back-end, however, if I had to make a choice, I would pick Back-end and DevOps, as I find it more interesting, because it's potentially more complex and challenging than Front-end can be. I <strong>constantly work on improving my skills and knowledge</strong> and enjoy learning new and better ways of solving problems and accomplishing tasks. As a result, with every new personal project, I aim to include at least one feature/problem that will require a solution for which I will have to learn something new.<br /><br />Besides coding, I also like to work with graphic design software and pervasive systems.<br /><br /> I work well both in teams and on my own and have <strong>experience working in Agile environment</strong>. I'm also an active person and love outdoor and indoor activities.",
   "availability": "",
   "contacts": {
     "location": {
@@ -30,7 +30,7 @@
     "date": "2019",
     "liveLink": "https://lina.codes",
     "job": "Full-stack Typescript development and DevOps",
-    "description": "Currently under development, to be released in mid/end of spring. Development is done using <strong>Angular, Node.js and MongoDB </strong>. Front-end is hosted using Github Pages and Back-end with database are hosted on <strong>Heroku</strong>"
+    "description": "Currently under development, to be released in mid/end of spring. Development is done using <strong>Angular, Node.js and MongoDB</strong>. Front-end is hosted using Github Pages and Back-end with database are hosted on <strong>Heroku</strong>"
   }, {
     "name": "Route Fox",
     "date": "2018 1st Quarter",
@@ -47,11 +47,11 @@
     "company": "Geospatial Insight Limited, Coleshill",
     "img": "assets/geospatial-logo.png",
     "job": "Full-stack JavaScript Developer",
-    "report": "Reporting to Manager of Softawre, Analytics and Machine Learning",
+    "report": "Reporting to Manager of Software, Analytics and Machine Learning",
     "from": "Jun 2018",
     "to": "Present",
     "length": "",
-    "description": "Working as part of the team developing tools used to display and manipulate a wide range of geospatial data collected from satellites, plane and drone imagery which is analysed by GSI Machine Learning team to produce insight into the collected data. Main GSI product being&nbsp;<strong>Visual Intelligence Platform</strong>. I'm responsible for developing new features, testing, deploying and maintaining the system. Technology used mainly includes&nbsp;<strong>Angular, Node.js, Postgres, Kubernetes, Gitlab CI and Google Cloud Platform</strong>.<br /><br />Other responsabilities include code quality reviews,&nbsp;project scope planning and review meetings, keeping planned tasks up-to-date in Jira and writting documentations."
+    "description": "Working as part of the team developing tools used to display and manipulate a wide range of geospatial data collected from satellites, plane and drone imagery which is analysed by GSI Machine Learning team to produce insight into the collected data. Main GSI product being&nbsp;<strong>Visual Intelligence Platform</strong>. I'm responsible for developing new features, testing, deploying and maintaining the system. Technology used mainly includes&nbsp;<strong>Angular, Node.js, Postgres, Kubernetes, Gitlab CI and Google Cloud Platform</strong>.<br /><br />Other responsibilities include code quality reviews,&nbsp;project scope planning and review meetings, keeping planned tasks up-to-date in Jira and writing documentation."
   }, {
     "company": "Sorion Electronics Limited, Birmingham",
     "img": "assets/sorion-logo.png",
