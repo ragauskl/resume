@@ -1,6 +1,7 @@
 const puppeteer = require('puppeteer')
 const shell = require('shelljs')
 const fs = require('fs')
+const chalk = require('chalk')
 // const { spawn } = require('child_process')
 let server, page, browser
 
@@ -44,7 +45,7 @@ const generatePdf = async () => {
 
   killNodes(server.pid)
   server.kill()
-  console.log('Http-server killed.')
+  console.log(chalk.default.greenBright('Http-server killed.'))
 
   await page.pdf({
     path: pdfFilePath,
@@ -65,35 +66,35 @@ const killNodes = (id) => {
 
 ;(async () => {
   buildLatestForPdf()
-  console.log('Build complete for PDF capture.')
+  console.log(chalk.default.greenBright('Build complete for PDF capture.'))
   await createServer()
-  console.log('Http-server started.')
+  console.log(chalk.default.greenBright('Http-server started.'))
   await createBrowser()
-  console.log('Broswer opened.')
+  console.log(chalk.default.greenBright('Broswer opened.'))
 
   let connected = false
   while (!connected) {
     try {
       await connectPage()
       connected = true
-      console.log('Page loaded.')
+      console.log(chalk.default.greenBright('Page loaded.'))
     } catch (error) {
-      console.log('Error laoding page.', error)
+      console.log(chalk.default.redBright('Error laoding page.', error))
     }
   }
 
   await generatePdf()
-  console.log('PDF generated.')
+  console.log(chalk.default.greenBright('PDF generated.'))
   await page.close()
   await browser.close()
-  console.log('Browser closed.')
+  console.log(chalk.default.greenBright('Browser closed.'))
   if (pdfValid()) {
-    console.log('PDF OK')
+    console.log(chalk.default.greenBright('PDF OK'))
     buildLatestForLive()
-    console.log('Build complete for live release.')
+    console.log(chalk.default.greenBright('Build complete for live release.'))
     process.exit(0)
   } else {
-    console.log('PDF NOK')
+    console.log(chalk.default.redBright('PDF NOK'))
     process.exit(1)
   }
 })()
