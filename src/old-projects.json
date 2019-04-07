@@ -1,0 +1,11 @@
+[{
+  "name": "Events Map",
+  "job": "Web Full-stack development",
+  "link": "https://youtu.be/z-jfPXoeV1I",
+  "description": "Project for Full-stack Development module - a social platform that allows users to create events and search for existing ones depending on various filters as well as view comments, save or attend events. Project Front-end was developed with <b>Angular 4</b>, <b>Angular Flex-layout</b> and <b>Material</b>, as well as <b>Google Maps API</b> for map manipulation. For Back-end, I used <b>NodeJS</b> and <b>ExpressJS</b>. During the project, I learned to securely hash passwords and used <b>MongoDB</b> as a database solution."
+}, {
+  "name": "Wireless lock system",
+  "job": "Mobile Front-end and Embedded System development",
+  "link": "https://youtu.be/qECn2Wm8lOM",
+  "description": "Project for Interactive Pervasive Computing module - a lock system with NFC tag reader, that is connected to a mobile application over Bluetooth. NFC tags were used to allow only authorized users to lock and unlock the locks, which were built using <b>Arduino</b> Uno microcontroller. A Bluetooth module was added to allow communication between the lock and a mobile application, built using <b>Ionic</b>, which was used to store authorized NFC tag ID's and synchronise data between multiple locks connected, as well as monitor lock states and see unauthorized access attempts."
+}]

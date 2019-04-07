@@ -36,8 +36,9 @@
        <div *ngFor="let project of cv_data.projects; index as i" fxLayout="column" fxLayoutAlign="start start">
             <div class="seperator" *ngIf="i !== 0"></div>
             <div fxFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="start start">
-                <p class="project-title"> <b>{{project.name}}</b> - {{project.job}}</p>
-                <a *ngIf="project.link && !pdfView" href="{{project.link}}" target="_blank" mat-button class="demo-button">Demo</a>
+                <p class="project-title"> <b>{{project.name}}</b> ({{project.date}}) - {{project.job}}</p>
+                <a *ngIf="project.demoLink && !pdfView" href="{{project.demoLink}}" target="_blank" mat-button class="demo-button">Demo</a>
+                <a *ngIf="project.liveLink && !pdfView" href="{{project.liveLink}}" target="_blank" mat-button class="demo-button">Live</a>
             </div>
             <p class="project-info" [innerHTML]="project.description"></p>
        </div>

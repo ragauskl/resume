@@ -31,6 +31,7 @@
     width: 150px;
     height: 150px;
     margin-top: 10px;
+    flex-shrink: 0;
 
     .sector-icon{
         max-width: 150px;
@@ -47,6 +48,7 @@
     border: 1px solid $gradient-light;
     height: 30px;
     line-height: 30px;
+    width: 70px;
 }
 
 .seperator {
