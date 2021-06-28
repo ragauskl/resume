@@ -1,22 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
+import { FlexLayoutModule } from '@angular/flex-layout'
+import { FormsModule } from '@angular/forms'
+import { RouterModule, Routes } from '@angular/router'
 
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button'
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ProfileImgComponent } from './components/profile-img/profile-img.component';
-import { SidePanelComponent } from './components/side-panel/side-panel.component';
-import { MainPanelComponent } from './components/main-panel/main-panel.component';
-import { ResumeComponent } from './resume/resume.component';
-
+import { AppComponent } from './app.component'
+import { HeaderComponent } from './components/header/header.component'
+import { ProfileImgComponent } from './components/profile-img/profile-img.component'
+import { SidePanelComponent } from './components/side-panel/side-panel.component'
+import { MainPanelComponent } from './components/main-panel/main-panel.component'
+import { ResumeComponent } from './resume/resume.component'
 
 const appRoutes: Routes = [
   { path: '', component: ResumeComponent }
-];
+]
 
 @NgModule({
   declarations: [

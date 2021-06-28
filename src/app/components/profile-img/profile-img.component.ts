@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-profile-img',
   templateUrl: './profile-img.component.html',
   styleUrls: ['./profile-img.component.scss']
 })
-export class ProfileImgComponent implements OnInit {
+export class ProfileImgComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  isEdge() {
+  isEdge () {
     if (navigator.userAgent.indexOf('Edge') >= 0) {
-      return true;
+      return true
     }
-    return false;
+    return false
   }
 }

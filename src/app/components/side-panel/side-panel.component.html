@@ -8,33 +8,33 @@
 
       <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
           <div class="round-icon" fxLayoutAlign="center center">
-              <img class="icon-img-s1" src="{{cv_data.contacts.location.img}}" alt="contact icon">
+              <img class="icon-img-s1" src="{{cvData.contacts.location.img}}" alt="contact icon">
           </div>
-          <p>{{cv_data.contacts.location.value}}</p>
+          <p>{{cvData.contacts.location.value}}</p>
       </div>
       <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
           <div class="round-icon" fxLayoutAlign="center center">
-              <img class="icon-img-s1" src="{{cv_data.contacts.email.img}}" alt="contact icon">
+              <img class="icon-img-s1" src="{{cvData.contacts.email.img}}" alt="contact icon">
           </div>
-          <p><a href="mailto:{{cv_data.contacts.email.value}}">{{cv_data.contacts.email.value}}</a></p>
+          <p><a href="mailto:{{cvData.contacts.email.value}}">{{cvData.contacts.email.value}}</a></p>
       </div>
       <!-- <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
           <div class="round-icon" fxLayoutAlign="center center">
-              <img class="icon-img-s1" src="{{cv_data.contacts.mobile.img}}" alt="contact icon">
+              <img class="icon-img-s1" src="{{cvData.contacts.mobile.img}}" alt="contact icon">
           </div>
-          <p>{{cv_data.contacts.mobile.value}}</p>
+          <p>{{cvData.contacts.mobile.value}}</p>
       </div> -->
       <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
           <div class="round-icon" fxLayoutAlign="center center">
-              <img class="icon-img-s2" src="{{cv_data.contacts.linkedin.img}}" alt="contact icon">
+              <img class="icon-img-s2" src="{{cvData.contacts.linkedin.img}}" alt="contact icon">
           </div>
-          <p><a target="_blank" href="{{'http://' + cv_data.contacts.linkedin.value}}">{{cv_data.contacts.linkedin.value}}</a></p>
+          <p><a target="_blank" href="{{'http://' + cvData.contacts.linkedin.value}}">{{cvData.contacts.linkedin.value}}</a></p>
       </div>
       <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
           <div class="round-icon" fxLayoutAlign="center end">
-              <img class="icon-img-s1" src="{{cv_data.contacts.github.img}}" alt="contact icon">
+              <img class="icon-img-s1" src="{{cvData.contacts.github.img}}" alt="contact icon">
           </div>
-          <p><a target="_blank" href="{{'http://' + cv_data.contacts.github.value}}">{{cv_data.contacts.github.value}}</a></p>
+          <p><a target="_blank" href="{{'http://' + cvData.contacts.github.value}}">{{cvData.contacts.github.value}}</a></p>
       </div>
   </div>
   <!-- LANGUAGES -->
@@ -42,7 +42,7 @@
       <div class="white-box">
           <p>LANGUAGES</p>
       </div>
-      <div *ngFor="let language of cv_data.languages" fxLayout="column">
+      <div *ngFor="let language of cvData.languages" fxLayout="column">
           <p class="no-bottom-margin"><b>{{language.name}}</b></p>
           <p class="sm-vertical-margin mini-font">{{language.level}}</p>
       </div>
@@ -52,14 +52,14 @@
       <div class="white-box">
           <p>EDUCATION</p>
       </div>
-      <img class="sector-icon" src="{{cv_data.education.img}}" alt="uni icon">
-      <p class="no-bottom-margin">{{cv_data.education.university}}</p>
-      <p class="sm-vertical-margin"><b>{{cv_data.education.course}}</b></p>
-      <p class="sm-vertical-margin">{{cv_data.education.from}} - {{cv_data.education.to}}</p>
+      <img class="sector-icon" src="{{cvData.education.img}}" alt="uni icon">
+      <p class="no-bottom-margin">{{cvData.education.university}}</p>
+      <p class="sm-vertical-margin"><b>{{cvData.education.course}}</b></p>
+      <p class="sm-vertical-margin">{{cvData.education.from}} - {{cvData.education.to}}</p>
       <p class="sm-vertical-margin"></p>
       <p class="sm-vertical-margin">Subjects studied:</p>
       <ul>
-          <li *ngFor="let module of cv_data.education.modules">{{module}}</li>
+          <li *ngFor="let module of cvData.education.modules">{{module}}</li>
       </ul>
   </div>
 </div>

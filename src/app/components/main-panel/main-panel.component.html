@@ -6,16 +6,16 @@
         <div class="line"></div>
     </div>
     <div class="sub-content" fxLayout="row" fxLayoutAlign="start start">
-        <p class="no-margin" [innerHTML]="cv_data.intro"></p>
+        <p class="no-margin" [innerHTML]="cvData.intro"></p>
     </div>
      <!-- Availability -->
-     <div *ngIf="cv_data.availability" class="sub-content" fxLayoutAlign="center center">
+     <div *ngIf="cvData.availability" class="sub-content" fxLayoutAlign="center center">
             <div class="line"></div>
             <h3 class="section-title" ><span>ROLE & AVAILABILITY</span></h3>
             <div class="line"></div>
         </div>
         <div class="sub-content" fxLayout="row" fxLayoutAlign="start start">
-            <p class="no-margin" [innerHTML]="cv_data.availability"></p>
+            <p class="no-margin" [innerHTML]="cvData.availability"></p>
         </div>
     <!-- SKILLS -->
     <div class="sub-content" fxLayoutAlign="center center">
@@ -33,7 +33,7 @@
         <div class="line"></div>
     </div>
     <div class="sub-content" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-       <div *ngFor="let project of cv_data.projects; index as i" fxLayout="column" fxLayoutAlign="start start">
+       <div *ngFor="let project of cvData.projects; index as i" fxLayout="column" fxLayoutAlign="start start">
             <div class="seperator" *ngIf="i !== 0"></div>
             <div fxFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="start start">
                 <p class="project-title"> <b>{{project.name}}</b> ({{project.date}}) - {{project.job}}</p>
@@ -51,7 +51,7 @@
     </div>
 
     <div class="sub-content" fxLayoutAlign="start start" fxLayout="column">
-        <div *ngFor="let job of cv_data.experience" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutGap="10px">
+        <div *ngFor="let job of cvData.experience" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutGap="10px">
             <div class="icon-container" fxLayoutAlign="center start">
                 <img class="sector-icon" src="{{job.img}}" alt="Workplace logo">
             </div>

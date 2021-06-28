@@ -1,17 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
-import data from '../../../data.json';
+import { Component, Input } from '@angular/core'
+import data from '../../../data.json'
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  cv_data = (<any>data);
-  @Input() pdfView = false;
-
-  constructor() { }
-
-  ngOnInit() { }
-
+export class HeaderComponent {
+  cvData = data
+  @Input() pdfView = false
 }
