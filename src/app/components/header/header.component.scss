@@ -8,7 +8,7 @@
     padding: 10px 0px;
     display: flex;
 
-    &:first-child {
+    > *:first-child {
       display: flex;
       flex-direction: column;
     }
