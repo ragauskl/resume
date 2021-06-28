@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import data from '../../../data.json'
+import * as data from '../../../data.json'
 
 @Component({
   selector: 'app-main-panel',
@@ -7,6 +7,6 @@ import data from '../../../data.json'
   styleUrls: ['./main-panel.component.scss']
 })
 export class MainPanelComponent {
-  cvData = data
+  cvData = data['default']
   @Input() pdfView = false
 }
