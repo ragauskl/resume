@@ -1,54 +1,54 @@
-<div class="side" fxLayout="column" fxLayoutGap="20px">
+<div class="side">
   <app-profile-img></app-profile-img>
   <!-- CONTACTS -->
-  <div *ngIf="!confidential" class="sub-content" fxLayout="column">
+  <div *ngIf="!confidential" class="sub-content column">
       <div class="white-box">
           <p>CONTACTS</p>
       </div>
 
-      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-          <div class="round-icon" fxLayoutAlign="center center">
+      <div class="row">
+          <div class="round-icon">
               <img class="icon-img-s1" src="{{cvData.contacts.location.img}}" alt="contact icon">
           </div>
           <p>{{cvData.contacts.location.value}}</p>
       </div>
-      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-          <div class="round-icon" fxLayoutAlign="center center">
+      <div class="row">
+          <div class="round-icon">
               <img class="icon-img-s1" src="{{cvData.contacts.email.img}}" alt="contact icon">
           </div>
           <p><a href="mailto:{{cvData.contacts.email.value}}">{{cvData.contacts.email.value}}</a></p>
       </div>
-      <!-- <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-          <div class="round-icon" fxLayoutAlign="center center">
+      <!-- <div class="row">
+          <div class="round-icon">
               <img class="icon-img-s1" src="{{cvData.contacts.mobile.img}}" alt="contact icon">
           </div>
           <p>{{cvData.contacts.mobile.value}}</p>
       </div> -->
-      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-          <div class="round-icon" fxLayoutAlign="center center">
+      <div class="row">
+          <div class="round-icon">
               <img class="icon-img-s2" src="{{cvData.contacts.linkedin.img}}" alt="contact icon">
           </div>
           <p><a target="_blank" href="{{'http://' + cvData.contacts.linkedin.value}}">{{cvData.contacts.linkedin.value}}</a></p>
       </div>
-      <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="start center">
-          <div class="round-icon" fxLayoutAlign="center end">
+      <div class="row">
+          <div class="round-icon" style="align-items: flex-end;">
               <img class="icon-img-s1" src="{{cvData.contacts.github.img}}" alt="contact icon">
           </div>
           <p><a target="_blank" href="{{'http://' + cvData.contacts.github.value}}">{{cvData.contacts.github.value}}</a></p>
       </div>
   </div>
   <!-- LANGUAGES -->
-  <div class="sub-content" fxLayout="column">
+  <div class="sub-content column">
       <div class="white-box">
           <p>LANGUAGES</p>
       </div>
-      <div *ngFor="let language of cvData.languages" fxLayout="column">
+      <div *ngFor="let language of cvData.languages" class="column">
           <p class="no-bottom-margin"><b>{{language.name}}</b></p>
           <p class="sm-vertical-margin mini-font">{{language.level}}</p>
       </div>
   </div>
   <!-- EDUCATION -->
-  <div class="sub-content" fxLayout="column">
+  <div class="sub-content column">
       <div class="white-box">
           <p>EDUCATION</p>
       </div>

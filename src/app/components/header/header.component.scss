@@ -6,6 +6,24 @@
 .title {
     background-color: $dark;
     padding: 10px 0px;
+    display: flex;
+
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 959px) {
+      flex-direction: column;
+
+      > *:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: 960px) {
+      justify-content: space-between;
+    }
 }
 
 .name {
@@ -28,6 +46,3 @@
     letter-spacing: 5px;
 }
 
-.download {
-    margin-left: -10px;
-}

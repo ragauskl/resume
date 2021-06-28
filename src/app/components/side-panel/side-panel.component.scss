@@ -2,6 +2,26 @@
 
 .side {
     background-color: $secondary-background;
+    display: flex;
+    flex-direction: column;
+
+    > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+
+  > *:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -27,6 +47,13 @@
     height: 30px;
     border-radius: 50%;
     background-color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > *:not(:last-child) {
+      margin-right: 10px;
+    }
 }
 
 .icon-img-s1 {

@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
-import { FlexLayoutModule } from '@angular/flex-layout'
 import { FormsModule } from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router'
 
@@ -28,7 +27,6 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule,
     FormsModule,
     MatButtonModule,
     RouterModule.forRoot(appRoutes)

@@ -1,41 +1,41 @@
-<div class="base" fxLayout="column" fxLayoutGap="20px">
+<div class="base">
     <!-- INTRODUCTION -->
-    <div class="sub-content" fxLayoutAlign="center center">
+    <div class="sub-content center">
         <div class="line"></div>
         <h3 class="section-title" ><span>INTRODUCTION</span></h3>
         <div class="line"></div>
     </div>
-    <div class="sub-content" fxLayout="row" fxLayoutAlign="start start">
+    <div class="sub-content column">
         <p class="no-margin" [innerHTML]="cvData.intro"></p>
     </div>
      <!-- Availability -->
-     <div *ngIf="cvData.availability" class="sub-content" fxLayoutAlign="center center">
+     <div *ngIf="cvData.availability" class="sub-content center">
             <div class="line"></div>
             <h3 class="section-title" ><span>ROLE & AVAILABILITY</span></h3>
             <div class="line"></div>
         </div>
-        <div class="sub-content" fxLayout="row" fxLayoutAlign="start start">
+        <div class="sub-content column">
             <p class="no-margin" [innerHTML]="cvData.availability"></p>
         </div>
     <!-- SKILLS -->
-    <div class="sub-content" fxLayoutAlign="center center">
+    <div class="sub-content center">
         <div class="line"></div>
         <h3 class="section-title" ><span>SKILLS</span></h3>
         <div class="line"></div>
     </div>
-    <div class="sub-content" fxLayout="row" fxLayoutAlign="center center">
+    <div class="sub-content center">
         <img width="100%" src="assets/skills-2.svg" alt="Skills chart">
     </div>
 
-    <div class="sub-content" fxLayoutAlign="center center">
+    <div class="sub-content center">
         <div class="line"></div>
         <h3 class="section-title" ><span>PROJECT PORTFOLIO</span></h3>
         <div class="line"></div>
     </div>
-    <div class="sub-content" fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-       <div *ngFor="let project of cvData.projects; index as i" fxLayout="column" fxLayoutAlign="start start">
+    <div class="sub-content column">
+       <div *ngFor="let project of cvData.projects; index as i" class="column">
             <div class="seperator" *ngIf="i !== 0"></div>
-            <div fxFill fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="start start">
+            <div class="project-header">
                 <p class="project-title"> <b>{{project.name}}</b> ({{project.date}}) - {{project.job}}</p>
                 <a *ngIf="project.demoLink && !pdfView" href="{{project.demoLink}}" target="_blank" mat-button class="demo-button">Demo</a>
                 <a *ngIf="project.liveLink && !pdfView" href="{{project.liveLink}}" target="_blank" mat-button class="demo-button">Live</a>
@@ -44,19 +44,19 @@
        </div>
     </div>
 
-    <div class="sub-content" fxLayoutAlign="center center">
+    <div class="sub-content center">
         <div class="line"></div>
-        <h3 class="section-title" ><span>RELEVANT EXPIERENCE</span></h3>
+        <h3 class="section-title" ><span>RELEVANT EXPERIENCE</span></h3>
         <div class="line"></div>
     </div>
 
-    <div class="sub-content" fxLayoutAlign="start start" fxLayout="column">
-        <div *ngFor="let job of cvData.experience" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-            <div class="icon-container" fxLayoutAlign="center start">
+    <div class="sub-content column">
+        <div *ngFor="let job of cvData.experience" class="exp-block">
+            <div class="icon-container">
                 <img class="sector-icon" src="{{job.img}}" alt="Workplace logo">
             </div>
-            <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="10px">
-                <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="5px">
+            <div class="column">
+                <div class="column small-gap">
                     <p class="project-info"> <b>{{job.job}}</b></p>
                     <p class="project-title" >{{job.company}}</p>
                     <p *ngIf="job.report" class="project-title" > {{job.report}}</p>
