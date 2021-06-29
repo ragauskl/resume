@@ -26,7 +26,7 @@
       </div> -->
       <div class="row">
           <div class="round-icon">
-              <img class="icon-img-s2" src="{{cvData.contacts.linkedin.img}}" alt="contact icon">
+              <img class="icon-img-s3" src="{{cvData.contacts.linkedin.img}}" alt="contact icon">
           </div>
           <p><a target="_blank" href="{{'http://' + cvData.contacts.linkedin.value}}">{{cvData.contacts.linkedin.value}}</a></p>
       </div>
@@ -37,6 +37,19 @@
           <p><a target="_blank" href="{{'http://' + cvData.contacts.github.value}}">{{cvData.contacts.github.value}}</a></p>
       </div>
   </div>
+  <!-- PORTFOLIO -->
+  <div class="sub-content column">
+    <div class="white-box">
+        <p>PORTFOLIO</p>
+    </div>
+    <p>{{cvData.portfolio.description}}</p>
+    <div class="row">
+      <div class="round-icon">
+          <img class="icon-img-s2" src="{{cvData.portfolio.img}}" alt="contact icon">
+      </div>
+      <p><a target="_blank" href="{{'https://' + cvData.portfolio.href}}">{{cvData.portfolio.href}}</a></p>
+    </div>
+</div>
   <!-- LANGUAGES -->
   <div class="sub-content column">
       <div class="white-box">

@@ -19,6 +19,7 @@ const createBrowser = async () => {
   browser = await puppeteer.launch({headless: !DEBUG, devtools: DEBUG})
   page = await browser.newPage()
   // PDF W 1600 H 1900
+  // A4 eq W 1600 H 2260
   await page.setViewport({width: 1600, height: 900})
 }
 
