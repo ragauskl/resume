@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import * as data from '../../../data.json'
+import content from '../../utils/content'
 
 @Component({
   selector: 'app-side-panel',
@@ -7,7 +7,7 @@ import * as data from '../../../data.json'
   styleUrls: ['./side-panel.component.scss']
 })
 export class SidePanelComponent {
-  cvData = data['default']
+  cvData = content
   @Input() pdfView = false
   @Input() confidential = false
 }

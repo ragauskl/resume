@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core'
-import * as data from '../../../data.json'
+import content from '../../utils/content'
 
 @Component({
   selector: 'app-header',
@@ -7,6 +7,6 @@ import * as data from '../../../data.json'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  cvData = data['default']
+  cvData = content
   @Input() pdfView = false
 }
