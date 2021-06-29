@@ -6,16 +6,6 @@ import { environment } from './environments/environment'
 
 if (environment.production) {
   enableProdMode()
-  // Inject google tag manager
-  const script = document.getElementById('google-analytics')
-  script.innerHTML = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-116679248-1');
-  `
-  document.head.appendChild(script)
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)

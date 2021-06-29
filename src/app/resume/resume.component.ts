@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { ActivatedRoute } from '@angular/router'
+import { environment } from '../../environments/environment'
 
 @Component({
   selector: 'app-resume',
@@ -21,5 +22,21 @@ export class ResumeComponent implements OnInit {
         this.pdfView = params.view === 'pdf'
       }
     })
+  }
+
+  ngAfterViewInit () {
+    if (environment.production && !this.pdfView) {
+      // Inject google tag manager
+      const script = document.getElementById('google-analytics')
+      script.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116679248-1');
+      `
+
+      document.head.appendChild(script)
+    }
   }
 }
