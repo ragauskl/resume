@@ -78,13 +78,14 @@ const content = {
     img: 'assets/logo/bitgapp.png',
     job: 'Director & Full-stack JavaScript Developer',
     report: '',
-    from: 'Jun 2021',
+    from: 'Apr 2021',
     to: 'Present',
     length: '',
     description: /*html*/ `
-      Bitgapp, founded by my partner, is a legal entity that now the two of us use for personal/entrepreneur projects. Reason for joining Bitgapp,
-      instead of creating new legal entity for myself, was plan to collaborate on current and future projects which is easier under one company in
-      terms of legal and financial aspects.
+      Director and co-owner of Bitgapp Ltd, a small independent software company based in UK. Currently Bitgapp is made of just two
+      (including myself) directors/software developers. We're working on some individual and some shared ideas which are then published under Bitgapp
+      name. My current main focus is Cursr - a cross-platform application for customizing mouse movements between multiple displays connected to a
+      computer (and soon to multiple computers).
       `
   }, {
     company: 'Geospatial Insight Limited, Coleshill',
